@@ -21,9 +21,14 @@
         "version": "2.4.0"
       },
       {
-        "name": "hxCodec",
-        "type": "haxelib",
-        "version": "2.6.1"
+        "name": "extension-webm",
+        "type": "git",
+        "ref": "master",
+        "url": "https://github.com/luckydog7/extension-webm.git"
+      },
+      {
+        "name": "actuate",
+        "type": "haxelib"
       },
       {
         "name": "hxcpp",
