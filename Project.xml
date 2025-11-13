@@ -27,10 +27,10 @@
 	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" vsync="false"/>
 
 	<!--Mobile/Switch-specific-->
-	<window if="mobile" orientation="landscape" fullscreen="true" resizable="false" vsync="true"/>
+	<window if="mobile" orientation="landscape" fullscreen="true" resizable="false"/>
 
 	<!--Switch-specific-->
-	<window if="switch" orientation="landscape" fullscreen="true" width="0" height="0" resizable="true" />
+	<window if="switch" orientation="landscape" fullscreen="true" resizable="true" />
 
 	<!-- _____________________________ Path Settings ____________________________ -->
 
@@ -65,8 +65,6 @@
 	<assets path="assets/shared"   library="shared"   exclude="*.mp3" unless="web"/>
 	<assets path="assets/clown"    library="clown"    exclude="*.ogg" if="web"/>
 	<assets path="assets/clown"    library="clown"    exclude="*.mp3" unless="web"/>
-
-	<assets path="assets/videos"/>
 
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />
 	<assets path="mobile" rename="assets/mobile" if="mobile"/>
