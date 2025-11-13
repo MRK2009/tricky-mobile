@@ -1,6 +1,6 @@
 //This was made by GWebDev lol btw this uses actuate
 package;
-#if desktop
+
 import motion.Actuate;
 import openfl.display.Sprite;
 import openfl.events.AsyncErrorEvent;
@@ -193,4 +193,3 @@ class VideoHandler
 		video.visible = true;
 	}
 }
-#end
