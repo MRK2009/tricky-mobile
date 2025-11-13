@@ -178,12 +178,6 @@ class Paths
 		return getPath('music/$key.$SOUND_EXT', MUSIC, library);
 	}
 
-	
-	inline static public function video(key:String)
-	{
-		return Asset2File.getPath('assets/videos/$key.mp4');
-	}
-
 	inline static public function voices(song:String)
 	{
 		return 'songs:assets/songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
