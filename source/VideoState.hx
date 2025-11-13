@@ -1,5 +1,5 @@
 package;
-#if desktop // hxcodec is better
+
 import flixel.FlxState;
 import flixel.FlxG;
 
@@ -205,4 +205,3 @@ class VideoState extends MusicBeatState
 		GlobalVideo.get().ended = false;
 	}
 }
-#end
