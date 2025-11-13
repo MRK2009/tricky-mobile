@@ -2,9 +2,13 @@ package;
 
 import flixel.FlxG;
 import openfl.display.Sprite;
+#if sys
 import webm.*;
+#end
+
 class WebmHandler
 {
+	#if sys
 	public var webm:WebmPlayer;
 	public var vidPath:String = "";
 	public var io:WebmIo;
@@ -155,4 +159,5 @@ class WebmHandler
 	{
 		webm.visible = true;
 	}
+	#end
 }
