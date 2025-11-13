@@ -2,7 +2,7 @@ name: Android Build
 on: workflow_dispatch
 jobs:
   Build:
-    runs-on: ubuntu-22.01
+    runs-on: ubuntu-22.04
     permissions:
         contents: write
         actions: write
