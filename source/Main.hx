@@ -1,4 +1,6 @@
 package;
+
+import webm.WebmPlayer;
 import openfl.display.Bitmap;
 import lime.app.Application;
 import flixel.util.FlxColor;
@@ -73,6 +75,30 @@ class Main extends Sprite
 		game = new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen);
 
 		addChild(game);
+
+
+		var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
+        
+        #if web
+        var str1:String = "HTML CRAP";
+        var vHandler = new VideoHandler();
+        vHandler.init1();
+        vHandler.video.name = str1;
+        addChild(vHandler.video);
+        vHandler.init2();
+        GlobalVideo.setVid(vHandler);
+        vHandler.source(ourSource);
+        #elseif desktop
+		WebmPlayer.SKIP_STEP_LIMIT = 90; //haxelib git extension-webm https://github.com/ThatRozebudDude/extension-webm
+        var str1:String = "WEBM SHIT"; 
+        var webmHandle = new WebmHandler();
+        webmHandle.source(ourSource);
+        webmHandle.makePlayer();
+        webmHandle.webm.name = str1;
+        addChild(webmHandle.webm);
+        GlobalVideo.setWebm(webmHandle);
+        #end 
+
 
 		fpsCounter = new FPS(10, 3, 0xFFFFFF);
 		addChild(fpsCounter);
