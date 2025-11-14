@@ -93,5 +93,5 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: Tricky Android
-          path: export/release/android/bin/app/build/outputs/apk/release/*.apk
+          path: export/release/android/bin/app/build/outputs/apk/debug
           if-no-files-found: warn
