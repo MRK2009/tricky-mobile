@@ -19,7 +19,7 @@ jobs:
           ndk-version: r25c
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@v1.2.0
+        uses: krdlab/setup-haxe@8f35d1215b93e940a76f9470e22e8a5ba6149598
         with:
           haxe-version: 4.2.5
 
