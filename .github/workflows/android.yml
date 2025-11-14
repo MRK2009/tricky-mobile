@@ -16,7 +16,7 @@ jobs:
         id: setup-ndk
         uses: nttld/setup-ndk@main
         with:
-          ndk-version: r21e
+          ndk-version: r25c
 
       - name: Setup Haxe
         uses: krdlab/setup-haxe@v1.2.0
@@ -44,7 +44,7 @@ jobs:
           haxelib run lime setup -alias -y
           haxelib run lime config ANDROID_SDK $ANDROID_HOME
           haxelib run lime config ANDROID_NDK_ROOT $ANDROID_NDK_HOME
-          haxelib run lime config JAVA_HOME $JAVA_HOME_8_X64
+          haxelib run lime config JAVA_HOME $JAVA_HOME_17_X64
           haxelib run lime config ANDROID_SETUP true
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
@@ -91,6 +91,6 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@main
         with:
-          name: Tricky Mobile
+          name: Tricky Android
           path: export/release/android/bin/app/build/outputs/apk/debug
           if-no-files-found: warn
