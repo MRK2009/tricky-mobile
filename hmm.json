@@ -27,13 +27,15 @@
       },
       {
         "name": "hxcpp",
-        "type": "haxelib",
-        "version": "4.2.1"
+        "type": "git",
+        "ref": "main",
+        "url": "https://github.com/HomuHomu833-haxelibs/hxcpp.git"
       },
       {
         "name": "lime",
-        "type": "haxelib",
-        "version": "7.9.0"
+        "type": "git",
+        "ref": "main",
+        "url": "https://github.com/MRK2009/lime-alt.git"
       },
       {
         "name": "openfl",
