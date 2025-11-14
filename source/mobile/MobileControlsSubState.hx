@@ -77,7 +77,7 @@ class MobileControlsSubState extends FlxSubState
 		resetButton.visible = false;
 		add(resetButton);
 
-		funitext = new FlxText(0, 0, 0, 'No Android Controls!', 32);
+		funitext = new FlxText(0, 0, 0, 'No Mobile Controls!', 32);
 		funitext.setFormat(Assets.getFont('assets/mobile/menu/vcr.ttf')
 			.fontName, 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK, true);
 		funitext.borderSize = 3;
