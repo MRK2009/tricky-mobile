@@ -13,7 +13,7 @@ class Asset2File
 
 	public static function getPath(id:String) // getPath rework by idklool
 	{
-		#if android
+		#if mobile
 		var file = Assets.getBytes(id);
 		var md5 = Md5.encode(Md5.make(file).toString());
 		var filePath = path + md5;
