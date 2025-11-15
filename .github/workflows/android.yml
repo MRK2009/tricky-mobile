@@ -39,7 +39,7 @@ jobs:
           haxelib install hmm --quiet
           haxelib run hmm install --quiet
           haxelib run lime setup android
-          haxelib run lime rebuild extension-webm android
+          haxelib run lime rebuild extension-webm android -DHXCPP_ARM64
           haxelib run lime rebuild hxcpp
           
       - name: Configure Android
