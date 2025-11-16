@@ -19,7 +19,7 @@
         "name": "extension-webm",
         "type": "git",
         "ref": "master",
-        "url": "https://github.com/Kade-github/extension-webm.git"
+        "url": "https://github.com/luckydog7/extension-webm.git"
       },
       {
         "name": "actuate",
@@ -27,15 +27,13 @@
       },
       {
         "name": "hxcpp",
-        "type": "git",
-        "ref": "main",
-        "url": "https://github.com/HomuHomu833-haxelibs/hxcpp.git"
+        "type": "haxelib",
+        "version": "4.2.1"
       },
       {
         "name": "lime",
-        "type": "git",
-        "ref": "main",
-        "url": "https://github.com/MRK2009/lime-alt.git"
+        "type": "haxelib",
+        "version": "7.9.0"
       },
       {
         "name": "openfl",
